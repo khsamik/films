@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.films {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;       
+    gap: 20px;
+}
+
+.films > div {
+    width: calc(25% - 15px);  
+    display: flex;
+    flex-direction: column;
+}
+
+.films div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;       
+}
+  
+body {
+  background: #0f0f14;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  height: 100vh ;
+}
+
+
+.sidebar {
+  width: 240px;
+  background: #111118;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.menu ul,
+.sidebar-bottom ul {
+  list-style: none;
+}
+
+.menu li,
+.sidebar-bottom li {
+  padding: 12px 0;
+  cursor: pointer;
+  color: #b5b5c3;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 1px solid #1f1f2e;
+}
+
+.main {
+  flex: 1;
+  background: linear-gradient(180deg, #1b1b2f, #0f0f14);
+}
+
+
+.header {
+  padding: 20px 40px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-left li {
+  cursor: pointer;
+  color: #b5b5c3;
+}
+
+.nav-right li {
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}  
+
+li img {
+    margin-left: 20px;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+.films {
+    overflow: scroll;
+    max-height: 540px;
+}
+
+.films::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(100.38deg, #FFFFFF 9.52%, rgba(255, 255, 255, 0) 155.68%);
+}
+
+header {
+  background-image: url(./images/Rectangle\ 201.png);
+  background-size: cover;
+  min-height: 400px;
+}
+
+.films div {
+  max-height: 301px;
+  max-width: 255px;
+  margin: 20px;
+}
